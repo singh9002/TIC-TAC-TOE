@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Itim', cursive;
+}
+@keyframes example {
+    from{background-color: #101111;}
+    to{background-color: #31d8ea;}
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: #101111;
+    animation-name: example;
+    animation-duration: 20s;
+    padding-top: 1px;
+}
+
+.title {
+    color: rgb(5, 237, 55);
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+h1{
+    text-shadow: 2px 2px 10px rgb(252, 7, 7);
+}
+
+.display {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33.4% 33.5% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+
+}
+
+.tile {
+    border: 1px solid white;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.playerX {
+    color: #fa6901;
+}
+
+.playerO {
+    color: #03f9f9;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.controls button {
+    padding: 15px 25px;
+    border-radius: 15px;
+    border: none;
+    font-size: 24px;
+    margin-left: 1em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-image: linear-gradient(to right, #f20707,#06188d);
+    box-shadow: 0 9px #8b8989;
+}
+
+.restart {
+    background-color: #1efc82;
+}
+
+#reset:hover {
+    background-image: linear-gradient(to right,#f20707,#06188d);
+    box-shadow: 0 12px 16px 0 ;
+    transform: translateY(4px);
+    cursor: pointer;
+    display: inline-block;
+}
